@@ -1,0 +1,16 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/semaforo.vox-80e02adda84c5ae71b6af99653d5f0dc.mesh"
+
+[deps]
+
+source_file="res://vox/semaforo.vox"
+dest_files=[ "res://.import/semaforo.vox-80e02adda84c5ae71b6af99653d5f0dc.mesh" ]
+
+[params]
+
+Scale=0.1
+GreedyMeshGenerator=true
+SnapToGround=false

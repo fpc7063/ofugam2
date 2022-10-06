@@ -1,47 +1,15 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://vox/laeb.vox" type="ArrayMesh" id=1]
-[ext_resource path="res://Player/scripts/PlayerController.gd" type="Script" id=2]
+[ext_resource path="res://MeshLib/terrain0.meshlib" type="MeshLibrary" id=1]
 
-[sub_resource type="BoxShape" id=2]
-extents = Vector3( 2, 0, 1 )
+[node name="scene_base" type="Spatial"]
 
-[sub_resource type="PlaneMesh" id=3]
-
-[sub_resource type="BoxShape" id=1]
-extents = Vector3( 0.203771, 0.205057, 0.204851 )
-
-[node name="Main" type="Spatial"]
-
-[node name="Terrain" type="Area" parent="."]
-
-[node name="CollisionShape" type="CollisionShape" parent="Terrain"]
-transform = Transform( 1.02287, 0, 0, 0, 1, 0, 0, 0, 1.48776, 2, -0.00604324, 1 )
-shape = SubResource( 2 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Terrain"]
-transform = Transform( 17, 0, 0, 0, 1, 0, 0, 0, 4, 17, 0, 4 )
-mesh = SubResource( 3 )
-
-[node name="Player" type="KinematicBody" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.005, 1 )
-script = ExtResource( 2 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Player"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.00042779, 0 )
-shape = SubResource( 1 )
-
-[node name="laeb" type="MeshInstance" parent="Player"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.721719, 0, 3.20101 )
-mesh = ExtResource( 1 )
-skeleton = NodePath("../..")
-
-[node name="MeshInstance" type="MeshInstance" parent="Player"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.00042779, 0 )
-skeleton = NodePath("")
-
-[node name="ARVROrigin" type="ARVROrigin" parent="Player"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, -0.00042779, 0 )
-
-[node name="ARVRCamera" type="ARVRCamera" parent="Player/ARVROrigin"]
-transform = Transform( -4.37114e-08, 0.5, -0.866025, 0, 0.866025, 0.5, 1, 2.18557e-08, -3.78552e-08, -2, 4, 0 )
+[node name="GridMap" type="GridMap" parent="."]
+mesh_library = ExtResource( 1 )
+cell_size = Vector3( 4, 2, 2 )
+data = {
+"cells": PoolIntArray( 0, 65527, 0, 1, 65527, 0, 2, 65527, 0, 3, 65527, 0, 4, 65527, 0, 5, 65527, 0, 6, 65527, 0, 7, 65527, 0, 8, 65527, 0, 9, 65527, 0, 10, 65527, 0, 0, 65528, 1, 1, 65528, 1, 2, 65528, 1, 3, 65528, 1, 4, 65528, 1, 5, 65528, 1, 6, 65528, 1, 7, 65528, 1, 8, 65528, 1, 9, 65528, 1, 10, 65528, 1, 0, 65529, 0, 1, 65529, 0, 2, 65529, 0, 3, 65529, 0, 4, 65529, 0, 5, 65529, 0, 6, 65529, 0, 7, 65529, 0, 8, 65529, 0, 9, 65529, 0, 10, 65529, 0, 0, 65530, 0, 1, 65530, 0, 2, 65530, 0, 3, 65530, 0, 4, 65530, 0, 5, 65530, 0, 6, 65530, 0, 7, 65530, 0, 8, 65530, 0, 9, 65530, 0, 10, 65530, 0, 0, 65531, 2, 1, 65531, 2, 2, 65531, 2, 3, 65531, 2, 4, 65531, 2, 5, 65531, 2, 6, 65531, 2, 7, 65531, 2, 8, 65531, 2, 9, 65531, 2, 10, 65531, 2, 0, 65532, 1, 1, 65532, 1, 2, 65532, 1, 3, 65532, 1, 4, 65532, 1, 5, 65532, 1, 6, 65532, 1, 7, 65532, 1, 8, 65532, 1, 9, 65532, 1, 10, 65532, 1, 0, 65533, 0, 1, 65533, 0, 2, 65533, 0, 3, 65533, 0, 4, 65533, 0, 5, 65533, 0, 6, 65533, 0, 7, 65533, 0, 8, 65533, 0, 9, 65533, 0, 10, 65533, 0, 0, 65534, 0, 1, 65534, 0, 2, 65534, 0, 3, 65534, 0, 4, 65534, 0, 5, 65534, 0, 6, 65534, 0, 7, 65534, 0, 8, 65534, 0, 9, 65534, 0, 10, 65534, 0, 0, 65535, 0, 1, 65535, 0, 2, 65535, 0, 3, 65535, 0, 4, 65535, 0, 5, 65535, 0, 6, 65535, 0, 7, 65535, 0, 8, 65535, 0, 9, 65535, 0, 10, 65535, 0 )
+}
+__meta__ = {
+"_editor_clip_": 0
+}

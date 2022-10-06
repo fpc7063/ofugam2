@@ -1,0 +1,16 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/roads.vox-4a4d11362a69a19e175f6fef47103ec9.mesh"
+
+[deps]
+
+source_file="res://vox/roads.vox"
+dest_files=[ "res://.import/roads.vox-4a4d11362a69a19e175f6fef47103ec9.mesh" ]
+
+[params]
+
+Scale=0.1
+GreedyMeshGenerator=true
+SnapToGround=false
