@@ -1,0 +1,16 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/argentina.vox-56bc68e18135e07e6c9807843c44b509.mesh"
+
+[deps]
+
+source_file="res://vox/argentina.vox"
+dest_files=[ "res://.import/argentina.vox-56bc68e18135e07e6c9807843c44b509.mesh" ]
+
+[params]
+
+Scale=0.1
+GreedyMeshGenerator=true
+SnapToGround=false

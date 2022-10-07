@@ -8,10 +8,14 @@
 
 config_version=4
 
+_global_script_classes=[  ]
+_global_script_class_icons={
+}
+
 [application]
 
 config/name="Pesadelo do Atacante"
-run/main_scene="res://Main.tscn"
+run/main_scene="res://scenes/game.tscn"
 config/icon="res://icon.png"
 
 [editor_plugins]

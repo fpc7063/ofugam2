@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scripts/scene_base.gd" type="Script" id=1]
+[ext_resource path="res://MeshLib/terrain0.meshlib" type="MeshLibrary" id=2]
+
+[sub_resource type="CubeMesh" id=1]
+
+[node name="scene_base" type="Spatial"]
+script = ExtResource( 1 )
+
+[node name="GridMap" type="GridMap" parent="."]
+mesh_library = ExtResource( 2 )
+cell_size = Vector3( 4, 2, 2 )
+data = {
+"cells": PoolIntArray( 0, 0, 655360, 1, 0, 655360, 2, 0, 655360, 3, 0, 655360, 4, 0, 655360, 0, 1, 655360, 1, 1, 655360, 2, 1, 655360, 3, 1, 655360, 4, 1, 655360, 0, 2, 655360, 1, 2, 655360, 2, 2, 655360, 3, 2, 655360, 4, 2, 655360, 0, 3, 655360, 1, 3, 655360, 2, 3, 655360, 3, 3, 655360, 4, 3, 655360, 0, 4, 655360, 1, 4, 655360, 2, 4, 655360, 3, 4, 655360, 4, 4, 655360, 0, 5, 655360, 1, 5, 655360, 2, 5, 655360, 3, 5, 655360, 4, 5, 655360, 0, 6, 655360, 1, 6, 655360, 2, 6, 655360, 3, 6, 655360, 4, 6, 655360, 0, 7, 655360, 1, 7, 655360, 2, 7, 655360, 3, 7, 655360, 4, 7, 655360, 0, 8, 655360, 1, 8, 655360, 2, 8, 655360, 3, 8, 655360, 4, 8, 655360 )
+}
+__meta__ = {
+"_editor_clip_": 0
+}
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( -0.487052, -0.113016, 0.86603, 0, 0.991592, 0.129401, -0.873373, 0.0630252, -0.482957, 25, 7.85879, 7.38352 )
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 5, 14 )
+mesh = SubResource( 1 )
