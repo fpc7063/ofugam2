@@ -66,16 +66,23 @@ func redraw_board() -> void:
 
 
 func add_spawner(line: int) -> void:
+	var side = rand_array([1, -1])
+	var time = rand_range(2.0, 5.0)
+	var speed = rand_range(10.0, 15.0) * (- side)
+	
 	var spawner = _spawner.instance()
 	add_child(spawner)
 	spawner_list.append([line, spawner])
-	spawner.translation = Vector3(rand_array([40, -40]), 4, (line * 2) + 1)
+	spawner.translation = Vector3(40 * side, 4, (line * 2) + 1)
+	spawner.start(speed)
 
 
 func remove_spawner() -> void:
 	var spawner = spawner_list[0]
 	spawner_list.pop_front()
-	remove_child(spawner[1])
+	spawner[1].queue_free()
+	#Only removes child from tree, does not delete it https://godotengine.org/qa/49429/what-is-difference-queue_free-and-remove_child-what-queue
+	#remove_child(spawner[1])
 
 
 func check_next(previous: int) -> int:
