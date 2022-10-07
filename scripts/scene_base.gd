@@ -9,16 +9,21 @@ enum {
 
 var new_line: int = 40
 var old_line: int = -5
-
 var z_player: int = 0
+var z_cam: int = 0
+
+var spawner_list: Array = []
+onready var _spawner = preload("res://Prefabs/Spawner/spawner.tscn")
 
 
 func _ready() -> void:
 	redraw_board()
 
+
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_accept"):
 		redraw_board()
+
 
 func add_line() -> void:
 	var previous = $GridMap.get_cell_item(0, 0, new_line)
@@ -26,6 +31,9 @@ func add_line() -> void:
 	new_line+=1
 	for x in range(-10, 10):
 		$GridMap.set_cell_item(x, 0, new_line, i)
+	
+	if(i in [ROAD, ROADLINE]):
+		add_spawner(new_line)
 		
 
 func del_line() -> void:
@@ -33,6 +41,9 @@ func del_line() -> void:
 		$GridMap.set_cell_item(x, 0, old_line, -1)
 		#yield(get_tree(), "idle_frame") #this fixes an uknown bug, perhaps lag?(TODO)
 	old_line += 1
+	
+	if(spawner_list[0][0] == old_line):
+		remove_spawner()
 
 
 func redraw_board() -> void:
@@ -47,9 +58,25 @@ func redraw_board() -> void:
 			var previous = $GridMap.get_cell_item(0, 0, z - 1)
 			i = check_next(previous)
 		
+		if(i in [ROAD, ROADLINE]):
+			add_spawner(z)
 		
 		for x in range(-10, 10):
 			$GridMap.set_cell_item(x, 0, z, i)
+
+
+func add_spawner(line: int) -> void:
+	var spawner = _spawner.instance()
+	add_child(spawner)
+	spawner_list.append([line, spawner])
+	spawner.translation = Vector3(rand_array([40, -40]), 4, (line * 2) + 1)
+
+
+func remove_spawner() -> void:
+	var spawner = spawner_list[0]
+	spawner_list.pop_front()
+	remove_child(spawner[1])
+
 
 func check_next(previous: int) -> int:
 	var i: int
@@ -65,6 +92,7 @@ func check_next(previous: int) -> int:
 			i = GRASS
 	
 	return i
+
 
 func rand_array(list: Array) -> int:
 	randomize()

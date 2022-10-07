@@ -21,7 +21,6 @@ func _physics_process(delta) -> void:
 	# TODO add minimum camera velocity
 	if(diff > 20):
 		ratio = diff / 5
-	print(diff)
 	
 	new_line = translation.z
 	vel = lerp(vel, (speed + ratio) * Vector3.BACK, 0.05)
@@ -31,3 +30,4 @@ func _physics_process(delta) -> void:
 		var parent = get_parent()
 		parent.add_line()
 		parent.del_line()
+		parent.z_cam = old_line # TODO: Remove if not used
