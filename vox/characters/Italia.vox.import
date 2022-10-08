@@ -1,0 +1,16 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/Italia.vox-a2b9471611492d80a73745cb5f4eb5cb.mesh"
+
+[deps]
+
+source_file="res://vox/characters/Italia.vox"
+dest_files=[ "res://.import/Italia.vox-a2b9471611492d80a73745cb5f4eb5cb.mesh" ]
+
+[params]
+
+Scale=0.1
+GreedyMeshGenerator=true
+SnapToGround=false

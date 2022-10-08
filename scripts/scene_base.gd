@@ -7,10 +7,12 @@ enum {
 	ROADLINE = 2
 }
 
-var new_line: int = 40
+var new_line: int = 20
 var old_line: int = -5
 var z_player: int = 0
 var z_cam: int = 0
+export var max_x: int = 7
+export var min_x: int = -9
 
 var spawner_list: Array = []
 onready var _spawner = preload("res://Prefabs/Spawner/spawner.tscn")
@@ -29,18 +31,25 @@ func add_line() -> void:
 	var previous = $GridMap.get_cell_item(0, 0, new_line)
 	var i = check_next(previous)
 	new_line+=1
-	for x in range(-10, 10):
+	for x in range(-1, 1):
 		$GridMap.set_cell_item(x, 0, new_line, i)
 	
 	if(i in [ROAD, ROADLINE]):
 		add_spawner(new_line)
+	
+	if(i == GRASS):
+		add_obstacles(new_line)
 		
 
 func del_line() -> void:
-	for x in range(-10, 10):
+	for x in range(-1, 1):
 		$GridMap.set_cell_item(x, 0, old_line, -1)
 		#yield(get_tree(), "idle_frame") #this fixes an uknown bug, perhaps lag?(TODO)
 	old_line += 1
+	
+	for x in range(min_x, max_x  + 1):
+		if($obstacles.get_cell_item(x, 0, old_line) != -1):
+			$obstacles.set_cell_item(x, 0, old_line, -1)
 	
 	if(spawner_list[0][0] == old_line):
 		remove_spawner()
@@ -61,7 +70,10 @@ func redraw_board() -> void:
 		if(i in [ROAD, ROADLINE]):
 			add_spawner(z)
 		
-		for x in range(-10, 10):
+		if((z > 4) and (i == GRASS)):
+			add_obstacles(z)
+		
+		for x in range(-1, 1):
 			$GridMap.set_cell_item(x, 0, z, i)
 
 
@@ -73,7 +85,7 @@ func add_spawner(line: int) -> void:
 	var spawner = _spawner.instance()
 	add_child(spawner)
 	spawner_list.append([line, spawner])
-	spawner.translation = Vector3(40 * side, 4, (line * 2) + 1)
+	spawner.translation = Vector3(40 * side, 2.8, (line * 2) + 1)
 	spawner.start(speed)
 
 
@@ -83,6 +95,15 @@ func remove_spawner() -> void:
 	spawner[1].queue_free()
 	#Only removes child from tree, does not delete it https://godotengine.org/qa/49429/what-is-difference-queue_free-and-remove_child-what-queue
 	#remove_child(spawner[1])
+
+
+func add_obstacles(line: int) -> void:
+	$obstacles.set_cell_item(min_x, 0, line, randi() % 5)
+	$obstacles.set_cell_item(max_x, 0, line, randi() % 5)
+	
+	for x in range(min_x, max_x):
+		if((randi() % 10) < 3):
+			$obstacles.set_cell_item(x, 0, line, randi() % 5)
 
 
 func check_next(previous: int) -> int:

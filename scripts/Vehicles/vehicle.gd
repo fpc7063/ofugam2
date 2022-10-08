@@ -11,3 +11,4 @@ func start(speed: float) -> void:
 
 func _physics_process(delta: float) -> void:
 	velocity = move_and_slide(velocity, Vector3.UP)
+

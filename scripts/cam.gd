@@ -19,8 +19,8 @@ func _physics_process(delta) -> void:
 	var diff = player_z - int(self.translation.z)
 	
 	# TODO add minimum camera velocity
-	if(diff > 20):
-		ratio = diff / 5
+	if(diff > 10):
+		ratio = diff / 2.5
 	
 	new_line = translation.z
 	vel = lerp(vel, (speed + ratio) * Vector3.BACK, 0.05)

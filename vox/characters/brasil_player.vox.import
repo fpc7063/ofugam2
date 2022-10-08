@@ -1,0 +1,16 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/brasil_player.vox-81b378e6e7096825078847dc221fd7a9.mesh"
+
+[deps]
+
+source_file="res://vox/characters/brasil_player.vox"
+dest_files=[ "res://.import/brasil_player.vox-81b378e6e7096825078847dc221fd7a9.mesh" ]
+
+[params]
+
+Scale=0.1
+GreedyMeshGenerator=true
+SnapToGround=false

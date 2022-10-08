@@ -28,9 +28,9 @@ func spawn_vehicle():
 		yield($Timer, "timeout")
 
 
-
-func _notification(notefication):
-	if notefication == NOTIFICATION_PREDELETE:
-		for vehicle in vehicle_list:
-			remove_child(vehicle)
+#not working
+#func _notification(notification):
+#	if notification == NOTIFICATION_PREDELETE:
+#		for vehicle in vehicle_list:
+#			vehicle.queue_free()
 

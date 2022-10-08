@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://vox/road.vox" type="ArrayMesh" id=1]
+[ext_resource path="res://vox/roadline.vox" type="ArrayMesh" id=2]
+[ext_resource path="res://vox/grass.vox" type="ArrayMesh" id=3]
+
+[node name="Main" type="Spatial"]
+
+[node name="grass-0" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+mesh = ExtResource( 3 )
+
+[node name="road-0" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7 )
+mesh = ExtResource( 1 )
+
+[node name="roadline-0" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4 )
+mesh = ExtResource( 2 )

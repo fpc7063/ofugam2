@@ -1,0 +1,16 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/Uruguai.vox-d45c69d4a75ef1afdb4ca1c6f28453e1.mesh"
+
+[deps]
+
+source_file="res://vox/characters/Uruguai.vox"
+dest_files=[ "res://.import/Uruguai.vox-d45c69d4a75ef1afdb4ca1c6f28453e1.mesh" ]
+
+[params]
+
+Scale=0.1
+GreedyMeshGenerator=true
+SnapToGround=false

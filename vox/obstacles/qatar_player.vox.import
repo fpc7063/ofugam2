@@ -1,0 +1,16 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/qatar_player.vox-c6665248ea2fe3d48d7679dd78fda4d9.mesh"
+
+[deps]
+
+source_file="res://vox/obstacles/qatar_player.vox"
+dest_files=[ "res://.import/qatar_player.vox-c6665248ea2fe3d48d7679dd78fda4d9.mesh" ]
+
+[params]
+
+Scale=0.1
+GreedyMeshGenerator=true
+SnapToGround=false
