@@ -1,5 +1,10 @@
 extends Spatial
 
+
+const random_utils_file := preload("res://scripts/utils/randomize.gd")
+var random_utils := random_utils_file.new()
+
+
 enum {
 	NOTHING = -1,
 	GRASS = 0,
@@ -78,7 +83,7 @@ func redraw_board() -> void:
 
 
 func add_spawner(line: int) -> void:
-	var side = rand_array([1, -1])
+	var side = random_utils.rand_array_element([1, -1])
 	var time = rand_range(2.0, 5.0)
 	var speed = rand_range(10.0, 15.0) * (- side)
 	
@@ -111,17 +116,20 @@ func check_next(previous: int) -> int:
 	# TODO: add more change to staying in the same type of biome
 	match previous:
 		GRASS:
-			i = rand_array([GRASS, ROAD, ROADLINE])
+			i = random_utils.rand_array_element([GRASS, ROAD, ROADLINE])
 		ROAD:
 			i = GRASS
 		ROADLINE:
-			i = rand_array([ROAD, ROADLINE])
+			i = random_utils.rand_array_element([ROAD, ROADLINE])
 		NOTHING:
 			i = GRASS
 	
 	return i
 
 
-func rand_array(list: Array) -> int:
-	randomize()
-	return list[randi()%list.size()]
+func player_height(pos_z) -> float:
+	var p: Vector3 = Vector3(0, 0, pos_z)
+	var m: Vector3 = $GridMap.world_to_map(p)
+	var i: int = $GridMap.get_cell_item(m.x, m.y, m.z)
+	return 3.0 if i == GRASS else 2.8
+	

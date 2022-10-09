@@ -1,0 +1,16 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/taxi_3.vox-89b088fae8c11f1a9300230f807bfa50.mesh"
+
+[deps]
+
+source_file="res://vox/vehicles/taxi/taxi_3.vox"
+dest_files=[ "res://.import/taxi_3.vox-89b088fae8c11f1a9300230f807bfa50.mesh" ]
+
+[params]
+
+Scale=0.18
+GreedyMeshGenerator=true
+SnapToGround=false
