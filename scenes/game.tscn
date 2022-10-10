@@ -46,7 +46,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 13 )
 collision_layer = 4
 collision_mask = 4
 script = ExtResource( 3 )
-speed = 3.0
 
 [node name="CollisionShape" type="CollisionShape" parent="cam"]
 transform = Transform( 16.8346, 0, 0.139173, 0, 1, 0, -2.36594, 0, 0.990268, 2.77471, 0, -10.3344 )
@@ -59,13 +58,13 @@ mesh = SubResource( 1 )
 skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Camera" type="Camera" parent="cam"]
+[node name="DEBUG CAMERA" type="Camera" parent="cam"]
 transform = Transform( -4.37114e-08, 0.5, -0.866025, 0, 0.866025, 0.5, 1, 2.18557e-08, -3.78552e-08, -22.7397, 12, 0 )
 
-[node name="Camera2" type="Camera" parent="cam"]
+[node name="DEBUG CAMERA2" type="Camera" parent="cam"]
 transform = Transform( -1, 2.11495e-08, -8.48259e-08, 0, 0.970296, 0.241922, 8.74228e-08, 0.241922, -0.970296, 2.32332, 11.7841, -27.263 )
 
-[node name="Camera3" type="Camera" parent="cam"]
+[node name="Game Camera" type="Camera" parent="cam"]
 transform = Transform( -0.990268, 0.0984102, -0.0984102, 0, 0.707107, 0.707107, 0.139173, 0.700225, -0.700226, 4, 9, -3 )
 projection = 1
 current = true
