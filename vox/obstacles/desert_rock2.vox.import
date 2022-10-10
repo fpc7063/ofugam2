@@ -1,0 +1,16 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/desert_rock2.vox-61b7d7eb169b4fd4e47d17e0aa10fcc5.mesh"
+
+[deps]
+
+source_file="res://vox/obstacles/desert_rock2.vox"
+dest_files=[ "res://.import/desert_rock2.vox-61b7d7eb169b4fd4e47d17e0aa10fcc5.mesh" ]
+
+[params]
+
+Scale=0.1
+GreedyMeshGenerator=true
+SnapToGround=false

@@ -1,0 +1,16 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/sand.vox-c3cb2ec85541647ec0a3b7ed9d4552a4.mesh"
+
+[deps]
+
+source_file="res://vox/terrain/sand.vox"
+dest_files=[ "res://.import/sand.vox-c3cb2ec85541647ec0a3b7ed9d4552a4.mesh" ]
+
+[params]
+
+Scale=0.1
+GreedyMeshGenerator=true
+SnapToGround=false

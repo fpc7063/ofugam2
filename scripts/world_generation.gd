@@ -9,7 +9,28 @@ enum {
 	NOTHING = -1,
 	GRASS = 0,
 	ROAD = 1,
-	ROADLINE = 2
+	ROADLINE = 2,
+	SIDEWALK = 3,
+	DESERT_SAND = 4,
+	
+	#General obstacles
+		NONE = 5,
+	
+	#Forest obstacles
+		TREE_0 = 0,
+		TREE_1 = 1,
+		TREE_2 = 3,
+		TREE_3 = 4,
+		LOG = 4,
+		BROWN_ROCK = 4,
+	
+	#Street obstacles
+		BEACON_0 = 6,
+		BEACON_1 = 9,
+		
+	#Desert obstacles
+		DESERT_BUSH_0 = 7,
+		DESERT_BUSH_1 = 8
 }
 
 var new_line: int = 20
@@ -44,7 +65,7 @@ func add_line() -> void:
 		add_spawner(new_line)
 		add_blocker(new_line)
 	
-	if(i == GRASS):
+	if(i == DESERT_SAND):
 		add_obstacles(new_line)
 		
 
@@ -64,7 +85,7 @@ func del_line() -> void:
 
 func redraw_board() -> void:
 	var meshlib: MeshLibrary = $GridMap.mesh_library
-	var grass: int = meshlib.find_item_by_name("grass-0")
+	var sand: int = meshlib.find_item_by_name("sand-0")
 	$GridMap.clear()
 	$obstacles.clear()
 	#TODO: reset not working
@@ -75,7 +96,7 @@ func redraw_board() -> void:
 	for z in range(old_line, new_line + 1):
 		var i: int
 		if(z <= 5):
-			i = GRASS
+			i = DESERT_SAND
 		else:
 			var previous = $GridMap.get_cell_item(0, 0, z - 1)
 			i = check_next(previous)
@@ -84,7 +105,7 @@ func redraw_board() -> void:
 			add_spawner(z)
 			add_blocker(z)
 		
-		if((z > 4) and (i == GRASS)):
+		if((z > 4) and (i == DESERT_SAND)):
 			add_obstacles(z)
 		
 		for x in range(-2, 2):
@@ -116,26 +137,26 @@ func add_blocker(line: int) -> void:
 	$obstacles.set_cell_item(max_x, 0, line, 5)
 
 func add_obstacles(line: int) -> void:
-	$obstacles.set_cell_item(min_x, 0, line, randi() % 5)
-	$obstacles.set_cell_item(max_x, 0, line, randi() % 5)
+	$obstacles.set_cell_item(min_x, 0, line, random_utils.rand_array_element([DESERT_BUSH_0, DESERT_BUSH_1]))
+	$obstacles.set_cell_item(max_x, 0, line, random_utils.rand_array_element([DESERT_BUSH_0, DESERT_BUSH_1]))
 	
 	for x in range(min_x, max_x):
 		if((randi() % 10) < 3):
-			$obstacles.set_cell_item(x, 0, line, randi() % 5)
+			$obstacles.set_cell_item(x, 0, line, random_utils.rand_array_element([DESERT_BUSH_0, DESERT_BUSH_1]))
 
 
 func check_next(previous: int) -> int:
 	var i: int
 	# TODO: add more change to staying in the same type of biome
 	match previous:
-		GRASS:
-			i = random_utils.rand_array_element([GRASS, ROAD, ROADLINE])
+		DESERT_SAND:
+			i = random_utils.rand_array_element([DESERT_SAND, ROAD, ROADLINE, ])
 		ROAD:
-			i = GRASS
+			i = DESERT_SAND
 		ROADLINE:
 			i = random_utils.rand_array_element([ROAD, ROADLINE])
 		NOTHING:
-			i = GRASS
+			i = DESERT_SAND
 	
 	return i
 
@@ -144,5 +165,5 @@ func player_height(pos_z) -> float:
 	var p: Vector3 = Vector3(0, 0, pos_z)
 	var m: Vector3 = $GridMap.world_to_map(p)
 	var i: int = $GridMap.get_cell_item(m.x, m.y, m.z)
-	return 3.0 if i == GRASS else 2.8
+	return 3.0 if i == DESERT_SAND else 2.8
 	

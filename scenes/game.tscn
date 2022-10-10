@@ -11,9 +11,9 @@
 [sub_resource type="ConcavePolygonShape" id=3]
 data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
 
-[sub_resource type="CubeMesh" id=1]
+[sub_resource type="CubeMesh" id=52]
 
-[sub_resource type="SpatialMaterial" id=2]
+[sub_resource type="SpatialMaterial" id=53]
 albedo_color = Color( 0.976471, 0.623529, 0.0156863, 1 )
 
 [node name="scene_base" type="Spatial"]
@@ -23,7 +23,7 @@ script = ExtResource( 1 )
 mesh_library = ExtResource( 2 )
 cell_size = Vector3( 24, 2, 2 )
 data = {
-"cells": PoolIntArray( 0, 0, 1, 65535, 0, 1, 0, 1, 0, 65535, 1, 0, 0, 2, 0, 65535, 2, 0, 0, 3, 2, 65535, 3, 2, 0, 4, 2, 65535, 4, 2, 0, 5, 1, 65535, 5, 1, 0, 6, 0, 65535, 6, 0, 0, 7, 0, 65535, 7, 0, 0, 65534, 0, 65535, 65534, 0, 0, 65535, 2, 65535, 65535, 2 )
+"cells": PoolIntArray( 0, 0, 1, 65535, 0, 1, 0, 1, 0, 65535, 1, 0, 0, 2, 0, 65535, 2, 0, 0, 3, 2, 65535, 3, 2, 0, 4, 2, 65535, 4, 2, 0, 5, 1, 65535, 5, 1, 0, 6, 0, 65535, 6, 0, 0, 7, 0, 65535, 7, 0, 0, 8, 3, 0, 9, 4, 0, 65534, 0, 65535, 65534, 0, 0, 65535, 2, 65535, 65535, 2 )
 }
 __meta__ = {
 "_editor_clip_": 0,
@@ -56,9 +56,9 @@ shape = SubResource( 3 )
 [node name="MeshInstance" type="MeshInstance" parent="cam"]
 transform = Transform( 16.8346, 0, 0.139173, 0, 1, 0, -2.36594, 0, 0.990268, 2.77471, 0, -10.3344 )
 visible = false
-mesh = SubResource( 1 )
+mesh = SubResource( 52 )
 skeleton = NodePath("../..")
-material/0 = SubResource( 2 )
+material/0 = SubResource( 53 )
 
 [node name="DEBUG CAMERA" type="Camera" parent="cam"]
 transform = Transform( -4.37114e-08, 0.5, -0.866025, 0, 0.866025, 0.5, 1, 2.18557e-08, -3.78552e-08, -22.7397, 12, 0 )

@@ -1,0 +1,16 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/sidewalk.vox-922d68cd84cc14b35f2a357577ae702f.mesh"
+
+[deps]
+
+source_file="res://vox/terrain/sidewalk.vox"
+dest_files=[ "res://.import/sidewalk.vox-922d68cd84cc14b35f2a357577ae702f.mesh" ]
+
+[params]
+
+Scale=0.1
+GreedyMeshGenerator=true
+SnapToGround=false

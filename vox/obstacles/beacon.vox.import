@@ -1,0 +1,16 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/beacon.vox-8eb3f7e06aa1e29719a6635a8c74b5db.mesh"
+
+[deps]
+
+source_file="res://vox/obstacles/beacon.vox"
+dest_files=[ "res://.import/beacon.vox-8eb3f7e06aa1e29719a6635a8c74b5db.mesh" ]
+
+[params]
+
+Scale=0.1
+GreedyMeshGenerator=true
+SnapToGround=false

@@ -1,0 +1,16 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/road_blocker.vox-425210d5aa32b671debe49fe05ec0144.mesh"
+
+[deps]
+
+source_file="res://vox/obstacles/road_blocker.vox"
+dest_files=[ "res://.import/road_blocker.vox-425210d5aa32b671debe49fe05ec0144.mesh" ]
+
+[params]
+
+Scale=0.1
+GreedyMeshGenerator=true
+SnapToGround=false

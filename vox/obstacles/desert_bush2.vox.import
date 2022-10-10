@@ -1,0 +1,16 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/desert_bush2.vox-8a7d7ce79d02423b8933f7a083e257cf.mesh"
+
+[deps]
+
+source_file="res://vox/obstacles/desert_bush2.vox"
+dest_files=[ "res://.import/desert_bush2.vox-8a7d7ce79d02423b8933f7a083e257cf.mesh" ]
+
+[params]
+
+Scale=0.1
+GreedyMeshGenerator=true
+SnapToGround=false
