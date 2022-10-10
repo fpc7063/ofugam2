@@ -2,6 +2,7 @@ extends Spatial
 
 
 onready var _vehicle = preload("res://Prefabs/Vehicles/Vehicle_Taxi.tscn")
+# TODO: optimatize vehicle_list to not grow indefinetly
 var vehicle_list: Array = []
 export var spawn_chance: int = 10
 export var speed_max: float = 0.0

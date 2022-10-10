@@ -64,6 +64,12 @@ func redraw_board() -> void:
 	var meshlib: MeshLibrary = $GridMap.mesh_library
 	var grass: int = meshlib.find_item_by_name("grass-0")
 	$GridMap.clear()
+	$obstacles.clear()
+	#TODO: reset not working
+	#if(not spawner_list == []):
+	#	for spawner in spawner_list:
+	#		spawner[1].queue_free()
+	#		spawner_list.pop_front()
 	for z in range(old_line, new_line + 1):
 		var i: int
 		if(z <= 5):
