@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Earn Points #010699.mp3-05c2be00ba011122d5a4c685d34bce0d.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/Earn Points #010699.mp3"
+dest_files=[ "res://.import/Earn Points #010699.mp3-05c2be00ba011122d5a4c685d34bce0d.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

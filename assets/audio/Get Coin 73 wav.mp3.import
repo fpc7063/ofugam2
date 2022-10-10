@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Get Coin 73 wav.mp3-85020d8d506a31b6dd0336bb2eff60a0.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/Get Coin 73 wav.mp3"
+dest_files=[ "res://.import/Get Coin 73 wav.mp3-85020d8d506a31b6dd0336bb2eff60a0.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

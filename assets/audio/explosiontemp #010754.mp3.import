@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/explosiontemp #010754.mp3-768e10cd675121bf4a6770b0917c4d27.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/explosiontemp #010754.mp3"
+dest_files=[ "res://.import/explosiontemp #010754.mp3-768e10cd675121bf4a6770b0917c4d27.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

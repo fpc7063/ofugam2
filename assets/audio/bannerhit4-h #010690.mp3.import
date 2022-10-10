@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/bannerhit4-h #010690.mp3-6fac2d17e32a1acc95a43b3c61168687.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/bannerhit4-h #010690.mp3"
+dest_files=[ "res://.import/bannerhit4-h #010690.mp3-6fac2d17e32a1acc95a43b3c61168687.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
