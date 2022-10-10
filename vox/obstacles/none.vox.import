@@ -1,0 +1,16 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/none.vox-56ed7a49ce9a4331a6c7e86f66914a24.mesh"
+
+[deps]
+
+source_file="res://vox/obstacles/none.vox"
+dest_files=[ "res://.import/none.vox-56ed7a49ce9a4331a6c7e86f66914a24.mesh" ]
+
+[params]
+
+Scale=0.1
+GreedyMeshGenerator=true
+SnapToGround=false

@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://vox/terrain/rock.vox" type="ArrayMesh" id=1]
-[ext_resource path="res://vox/terrain/tree.vox" type="ArrayMesh" id=2]
-[ext_resource path="res://vox/terrain/tree2.vox" type="ArrayMesh" id=3]
-[ext_resource path="res://vox/terrain/tree3.vox" type="ArrayMesh" id=4]
+[ext_resource path="res://vox/obstacles/rock.vox" type="ArrayMesh" id=1]
+[ext_resource path="res://vox/obstacles/tree.vox" type="ArrayMesh" id=2]
+[ext_resource path="res://vox/obstacles/tree2.vox" type="ArrayMesh" id=3]
+[ext_resource path="res://vox/obstacles/tree3.vox" type="ArrayMesh" id=4]
+[ext_resource path="res://vox/obstacles/none.vox" type="ArrayMesh" id=5]
 
 [sub_resource type="BoxShape" id=2]
 extents = Vector3( 1, 1.8, 1 )
@@ -78,5 +79,16 @@ skeleton = NodePath("../tree0")
 [node name="StaticBody" type="StaticBody" parent="rock"]
 
 [node name="CollisionShape" type="CollisionShape" parent="rock/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8, 0 )
+shape = SubResource( 2 )
+
+[node name="none" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 14.5613 )
+mesh = ExtResource( 5 )
+skeleton = NodePath("../tree0")
+
+[node name="StaticBody" type="StaticBody" parent="none"]
+
+[node name="CollisionShape" type="CollisionShape" parent="none/StaticBody"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8, 0 )
 shape = SubResource( 2 )

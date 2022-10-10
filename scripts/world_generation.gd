@@ -16,8 +16,8 @@ var new_line: int = 20
 var old_line: int = -5
 var z_player: int = 0
 var z_cam: int = 0
-export var max_x: int = 7
-export var min_x: int = -9
+export var max_x: int = 10
+export var min_x: int = -6
 
 var spawner_list: Array = []
 onready var _spawner = preload("res://Prefabs/Spawner/spawner.tscn")
@@ -36,11 +36,13 @@ func add_line() -> void:
 	var previous = $GridMap.get_cell_item(0, 0, new_line)
 	var i = check_next(previous)
 	new_line+=1
-	for x in range(-1, 1):
+	for x in range(-2, 2):
+		print(x)
 		$GridMap.set_cell_item(x, 0, new_line, i)
 	
 	if(i in [ROAD, ROADLINE]):
 		add_spawner(new_line)
+		add_blocker(new_line)
 	
 	if(i == GRASS):
 		add_obstacles(new_line)
@@ -80,11 +82,12 @@ func redraw_board() -> void:
 		
 		if(i in [ROAD, ROADLINE]):
 			add_spawner(z)
+			add_blocker(z)
 		
 		if((z > 4) and (i == GRASS)):
 			add_obstacles(z)
 		
-		for x in range(-1, 1):
+		for x in range(-2, 2):
 			$GridMap.set_cell_item(x, 0, z, i)
 
 
@@ -107,6 +110,10 @@ func remove_spawner() -> void:
 	#Only removes child from tree, does not delete it https://godotengine.org/qa/49429/what-is-difference-queue_free-and-remove_child-what-queue
 	#remove_child(spawner[1])
 
+
+func add_blocker(line: int) -> void:
+	$obstacles.set_cell_item(min_x, 0, line, 5)
+	$obstacles.set_cell_item(max_x, 0, line, 5)
 
 func add_obstacles(line: int) -> void:
 	$obstacles.set_cell_item(min_x, 0, line, randi() % 5)
