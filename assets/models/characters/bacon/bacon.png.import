@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bacon.png-f1ff7e9bc8d5e2a76a987327ca696444.stex"
+path="res://.import/bacon.png-b1e196c9913b8d70eabcde4c38089cd5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/models/characters/bacon/bacon.png"
-dest_files=[ "res://.import/bacon.png-f1ff7e9bc8d5e2a76a987327ca696444.stex" ]
+source_file="res://Assets/models/characters/bacon/bacon.png"
+dest_files=[ "res://.import/bacon.png-b1e196c9913b8d70eabcde4c38089cd5.stex" ]
 
 [params]
 

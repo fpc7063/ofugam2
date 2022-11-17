@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/social.png-0d9e56b854bf020316678c3e8f82008d.stex"
+path="res://.import/social.png-6dd4351a8b49b3b8befedd885f41bd69.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/buttons/social.png"
-dest_files=[ "res://.import/social.png-0d9e56b854bf020316678c3e8f82008d.stex" ]
+source_file="res://Assets/images/buttons/social.png"
+dest_files=[ "res://.import/social.png-6dd4351a8b49b3b8befedd885f41bd69.stex" ]
 
 [params]
 

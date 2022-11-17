@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/palmer.png-ab3c9c813b02cd6340ab05d583d92286.stex"
+path="res://.import/palmer.png-6dda5b207b918e47dfec7117383a4ce4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/models/characters/palmer/palmer.png"
-dest_files=[ "res://.import/palmer.png-ab3c9c813b02cd6340ab05d583d92286.stex" ]
+source_file="res://Assets/models/characters/palmer/palmer.png"
+dest_files=[ "res://.import/palmer.png-6dda5b207b918e47dfec7117383a4ce4.stex" ]
 
 [params]
 

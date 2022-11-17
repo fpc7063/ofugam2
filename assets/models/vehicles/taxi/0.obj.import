@@ -2,14 +2,14 @@
 
 importer="wavefront_obj"
 type="Mesh"
-path="res://.import/0.obj-c2a8d98469eb1020dcdbea61ad47b15a.mesh"
+path="res://.import/0.obj-ae88302d8d33a11db5496810183ee100.mesh"
 
 [deps]
 
-files=[ "res://.import/0.obj-c2a8d98469eb1020dcdbea61ad47b15a.mesh" ]
+files=[ "res://.import/0.obj-ae88302d8d33a11db5496810183ee100.mesh" ]
 
-source_file="res://assets/models/vehicles/taxi/0.obj"
-dest_files=[ "res://.import/0.obj-c2a8d98469eb1020dcdbea61ad47b15a.mesh", "res://.import/0.obj-c2a8d98469eb1020dcdbea61ad47b15a.mesh" ]
+source_file="res://Assets/models/vehicles/taxi/0.obj"
+dest_files=[ "res://.import/0.obj-ae88302d8d33a11db5496810183ee100.mesh", "res://.import/0.obj-ae88302d8d33a11db5496810183ee100.mesh" ]
 
 [params]
 

@@ -2,12 +2,12 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/pig2 #010749.mp3-36a202748390c0ce8c6fc5357d7d3a9e.mp3str"
+path="res://.import/pig2 #010749.mp3-ec1bcabf2a88355d17813668df077898.mp3str"
 
 [deps]
 
-source_file="res://assets/audio/pig2 #010749.mp3"
-dest_files=[ "res://.import/pig2 #010749.mp3-36a202748390c0ce8c6fc5357d7d3a9e.mp3str" ]
+source_file="res://Assets/audio/pig2 #010749.mp3"
+dest_files=[ "res://.import/pig2 #010749.mp3-ec1bcabf2a88355d17813668df077898.mp3str" ]
 
 [params]
 

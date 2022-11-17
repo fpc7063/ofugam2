@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/share.png-d607ecfc517d261307bbea1b3d12fb3c.stex"
+path="res://.import/share.png-274cfaefcb2fb7a10f9e0e4db70096ac.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/buttons/share.png"
-dest_files=[ "res://.import/share.png-d607ecfc517d261307bbea1b3d12fb3c.stex" ]
+source_file="res://Assets/images/buttons/share.png"
+dest_files=[ "res://.import/share.png-274cfaefcb2fb7a10f9e0e4db70096ac.stex" ]
 
 [params]
 

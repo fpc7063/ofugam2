@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/chickendeath.wav-a7da1d15a2679ccf924409daa670a2c3.sample"
+path="res://.import/chickendeath.wav-518dc3f29d9b52514ba4247c88b71772.sample"
 
 [deps]
 
-source_file="res://assets/audio/chickendeath.wav"
-dest_files=[ "res://.import/chickendeath.wav-a7da1d15a2679ccf924409daa670a2c3.sample" ]
+source_file="res://Assets/audio/chickendeath.wav"
+dest_files=[ "res://.import/chickendeath.wav-518dc3f29d9b52514ba4247c88b71772.sample" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/dark-grass.png-05226a9d83f5a26bc064d881884d970d.stex"
+path="res://.import/dark-grass.png-e73bde78d4f486949fd75cf6fcdfa5d2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/models/environment/grass/dark-grass.png"
-dest_files=[ "res://.import/dark-grass.png-05226a9d83f5a26bc064d881884d970d.stex" ]
+source_file="res://Assets/models/environment/grass/dark-grass.png"
+dest_files=[ "res://.import/dark-grass.png-e73bde78d4f486949fd75cf6fcdfa5d2.stex" ]
 
 [params]
 

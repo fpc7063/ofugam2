@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/train_pass_shorter.wav-1fe93af7a135382348cb7869c7e6f250.sample"
+path="res://.import/train_pass_shorter.wav-f0fb43c8b84a646ffd9e506fc99b6ee2.sample"
 
 [deps]
 
-source_file="res://assets/audio/train_pass_shorter.wav"
-dest_files=[ "res://.import/train_pass_shorter.wav-1fe93af7a135382348cb7869c7e6f250.sample" ]
+source_file="res://Assets/audio/train_pass_shorter.wav"
+dest_files=[ "res://.import/train_pass_shorter.wav-f0fb43c8b84a646ffd9e506fc99b6ee2.sample" ]
 
 [params]
 

@@ -2,14 +2,14 @@
 
 importer="wavefront_obj"
 type="Mesh"
-path="res://.import/avocoder.obj-e2e7e7535e77b861549833f7027a9a79.mesh"
+path="res://.import/avocoder.obj-0eaf3f51c12a3b03249516375301253d.mesh"
 
 [deps]
 
-files=[ "res://.import/avocoder.obj-e2e7e7535e77b861549833f7027a9a79.mesh" ]
+files=[ "res://.import/avocoder.obj-0eaf3f51c12a3b03249516375301253d.mesh" ]
 
-source_file="res://assets/models/characters/avocoder/avocoder.obj"
-dest_files=[ "res://.import/avocoder.obj-e2e7e7535e77b861549833f7027a9a79.mesh", "res://.import/avocoder.obj-e2e7e7535e77b861549833f7027a9a79.mesh" ]
+source_file="res://Assets/models/characters/avocoder/avocoder.obj"
+dest_files=[ "res://.import/avocoder.obj-0eaf3f51c12a3b03249516375301253d.mesh", "res://.import/avocoder.obj-0eaf3f51c12a3b03249516375301253d.mesh" ]
 
 [params]
 

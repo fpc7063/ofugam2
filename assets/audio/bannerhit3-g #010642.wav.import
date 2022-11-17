@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/bannerhit3-g #010642.wav-cf7116144cb39340d7b1d820ad448015.sample"
+path="res://.import/bannerhit3-g #010642.wav-931323b8565f4802b8084c8725fba70b.sample"
 
 [deps]
 
-source_file="res://assets/audio/bannerhit3-g #010642.wav"
-dest_files=[ "res://.import/bannerhit3-g #010642.wav-cf7116144cb39340d7b1d820ad448015.sample" ]
+source_file="res://Assets/audio/bannerhit3-g #010642.wav"
+dest_files=[ "res://.import/bannerhit3-g #010642.wav-931323b8565f4802b8084c8725fba70b.sample" ]
 
 [params]
 

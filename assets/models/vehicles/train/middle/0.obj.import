@@ -2,14 +2,14 @@
 
 importer="wavefront_obj"
 type="Mesh"
-path="res://.import/0.obj-afe6f4238867571c49a7921202418df1.mesh"
+path="res://.import/0.obj-1e822169cc23664cff4d1fee856498df.mesh"
 
 [deps]
 
-files=[ "res://.import/0.obj-afe6f4238867571c49a7921202418df1.mesh" ]
+files=[ "res://.import/0.obj-1e822169cc23664cff4d1fee856498df.mesh" ]
 
-source_file="res://assets/models/vehicles/train/middle/0.obj"
-dest_files=[ "res://.import/0.obj-afe6f4238867571c49a7921202418df1.mesh", "res://.import/0.obj-afe6f4238867571c49a7921202418df1.mesh" ]
+source_file="res://Assets/models/vehicles/train/middle/0.obj"
+dest_files=[ "res://.import/0.obj-1e822169cc23664cff4d1fee856498df.mesh", "res://.import/0.obj-1e822169cc23664cff4d1fee856498df.mesh" ]
 
 [params]
 

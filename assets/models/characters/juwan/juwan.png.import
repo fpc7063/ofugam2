@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/juwan.png-719967ca574e3764bd4a8528c8910746.stex"
+path="res://.import/juwan.png-547c1290ec4b2f250db23f836b1db04f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/models/characters/juwan/juwan.png"
-dest_files=[ "res://.import/juwan.png-719967ca574e3764bd4a8528c8910746.stex" ]
+source_file="res://Assets/models/characters/juwan/juwan.png"
+dest_files=[ "res://.import/juwan.png-547c1290ec4b2f250db23f836b1db04f.stex" ]
 
 [params]
 

@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/frog1 #010607.wav-ed72bbcd3d250fdcd6d9e90e6fc8f501.sample"
+path="res://.import/frog1 #010607.wav-97b1e8047ff80ca29b18619157f1943a.sample"
 
 [deps]
 
-source_file="res://assets/audio/frog1 #010607.wav"
-dest_files=[ "res://.import/frog1 #010607.wav-ed72bbcd3d250fdcd6d9e90e6fc8f501.sample" ]
+source_file="res://Assets/audio/frog1 #010607.wav"
+dest_files=[ "res://.import/frog1 #010607.wav-97b1e8047ff80ca29b18619157f1943a.sample" ]
 
 [params]
 

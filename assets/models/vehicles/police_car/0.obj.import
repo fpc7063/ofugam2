@@ -2,14 +2,14 @@
 
 importer="wavefront_obj"
 type="Mesh"
-path="res://.import/0.obj-31d5457ac4b2249f1a5a4abab64ce659.mesh"
+path="res://.import/0.obj-a85a6fe8ca603731bbf29162eb5ec51b.mesh"
 
 [deps]
 
-files=[ "res://.import/0.obj-31d5457ac4b2249f1a5a4abab64ce659.mesh" ]
+files=[ "res://.import/0.obj-a85a6fe8ca603731bbf29162eb5ec51b.mesh" ]
 
-source_file="res://assets/models/vehicles/police_car/0.obj"
-dest_files=[ "res://.import/0.obj-31d5457ac4b2249f1a5a4abab64ce659.mesh", "res://.import/0.obj-31d5457ac4b2249f1a5a4abab64ce659.mesh" ]
+source_file="res://Assets/models/vehicles/police_car/0.obj"
+dest_files=[ "res://.import/0.obj-a85a6fe8ca603731bbf29162eb5ec51b.mesh", "res://.import/0.obj-a85a6fe8ca603731bbf29162eb5ec51b.mesh" ]
 
 [params]
 

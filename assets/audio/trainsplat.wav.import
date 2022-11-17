@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/trainsplat.wav-5484ee71aa7656b33c231f4ede066c33.sample"
+path="res://.import/trainsplat.wav-a87dffc97285781f82877093fbbb44a6.sample"
 
 [deps]
 
-source_file="res://assets/audio/trainsplat.wav"
-dest_files=[ "res://.import/trainsplat.wav-5484ee71aa7656b33c231f4ede066c33.sample" ]
+source_file="res://Assets/audio/trainsplat.wav"
+dest_files=[ "res://.import/trainsplat.wav-a87dffc97285781f82877093fbbb44a6.sample" ]
 
 [params]
 

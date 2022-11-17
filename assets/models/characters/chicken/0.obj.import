@@ -2,14 +2,14 @@
 
 importer="wavefront_obj"
 type="Mesh"
-path="res://.import/0.obj-6f074f9e5c0db2ef38c8876bf013e991.mesh"
+path="res://.import/0.obj-446a9b944c55d98952d5e6c72d7321e7.mesh"
 
 [deps]
 
-files=[ "res://.import/0.obj-6f074f9e5c0db2ef38c8876bf013e991.mesh" ]
+files=[ "res://.import/0.obj-446a9b944c55d98952d5e6c72d7321e7.mesh" ]
 
-source_file="res://assets/models/characters/chicken/0.obj"
-dest_files=[ "res://.import/0.obj-6f074f9e5c0db2ef38c8876bf013e991.mesh", "res://.import/0.obj-6f074f9e5c0db2ef38c8876bf013e991.mesh" ]
+source_file="res://Assets/models/characters/chicken/0.obj"
+dest_files=[ "res://.import/0.obj-446a9b944c55d98952d5e6c72d7321e7.mesh", "res://.import/0.obj-446a9b944c55d98952d5e6c72d7321e7.mesh" ]
 
 [params]
 

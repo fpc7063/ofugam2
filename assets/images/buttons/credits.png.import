@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/credits.png-92746fee6f04b967000a1ab5a5785b08.stex"
+path="res://.import/credits.png-4f8e00b604ada78624f40355f7c657b2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/buttons/credits.png"
-dest_files=[ "res://.import/credits.png-92746fee6f04b967000a1ab5a5785b08.stex" ]
+source_file="res://Assets/images/buttons/credits.png"
+dest_files=[ "res://.import/credits.png-4f8e00b604ada78624f40355f7c657b2.stex" ]
 
 [params]
 

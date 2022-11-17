@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/buck10.wav-ebbae4ccf18b54139a0e3c7de520c930.sample"
+path="res://.import/buck10.wav-bf2d765d9781391f1cd650ad4b23f84c.sample"
 
 [deps]
 
-source_file="res://assets/audio/buck10.wav"
-dest_files=[ "res://.import/buck10.wav-ebbae4ccf18b54139a0e3c7de520c930.sample" ]
+source_file="res://Assets/audio/buck10.wav"
+dest_files=[ "res://.import/buck10.wav-bf2d765d9781391f1cd650ad4b23f84c.sample" ]
 
 [params]
 

@@ -2,14 +2,14 @@
 
 importer="wavefront_obj"
 type="Mesh"
-path="res://.import/wheeler.obj-dbed933060322640fb66534898f79897.mesh"
+path="res://.import/wheeler.obj-ca992d00fa47b4e69dc172c7e67ac657.mesh"
 
 [deps]
 
-files=[ "res://.import/wheeler.obj-dbed933060322640fb66534898f79897.mesh" ]
+files=[ "res://.import/wheeler.obj-ca992d00fa47b4e69dc172c7e67ac657.mesh" ]
 
-source_file="res://assets/models/characters/wheeler/wheeler.obj"
-dest_files=[ "res://.import/wheeler.obj-dbed933060322640fb66534898f79897.mesh", "res://.import/wheeler.obj-dbed933060322640fb66534898f79897.mesh" ]
+source_file="res://Assets/models/characters/wheeler/wheeler.obj"
+dest_files=[ "res://.import/wheeler.obj-ca992d00fa47b4e69dc172c7e67ac657.mesh", "res://.import/wheeler.obj-ca992d00fa47b4e69dc172c7e67ac657.mesh" ]
 
 [params]
 

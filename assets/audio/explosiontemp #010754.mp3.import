@@ -2,12 +2,12 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/explosiontemp #010754.mp3-768e10cd675121bf4a6770b0917c4d27.mp3str"
+path="res://.import/explosiontemp #010754.mp3-585171ee40f91fe5465cab56738b4cfb.mp3str"
 
 [deps]
 
-source_file="res://assets/audio/explosiontemp #010754.mp3"
-dest_files=[ "res://.import/explosiontemp #010754.mp3-768e10cd675121bf4a6770b0917c4d27.mp3str" ]
+source_file="res://Assets/audio/explosiontemp #010754.mp3"
+dest_files=[ "res://.import/explosiontemp #010754.mp3-585171ee40f91fe5465cab56738b4cfb.mp3str" ]
 
 [params]
 

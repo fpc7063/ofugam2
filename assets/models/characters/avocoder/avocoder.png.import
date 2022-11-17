@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/avocoder.png-136fb5db86ad7c1866939123c36301de.stex"
+path="res://.import/avocoder.png-16a7cb26927594b7df9c55db3debed5f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/models/characters/avocoder/avocoder.png"
-dest_files=[ "res://.import/avocoder.png-136fb5db86ad7c1866939123c36301de.stex" ]
+source_file="res://Assets/models/characters/avocoder/avocoder.png"
+dest_files=[ "res://.import/avocoder.png-16a7cb26927594b7df9c55db3debed5f.stex" ]
 
 [params]
 

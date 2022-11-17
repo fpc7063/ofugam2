@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/car-engine-loop-deep.wav-65895700ab98b620381002f1f8703cb1.sample"
+path="res://.import/car-engine-loop-deep.wav-a6c33d8b4c6e6161baee4ba4b257ab15.sample"
 
 [deps]
 
-source_file="res://assets/audio/car-engine-loop-deep.wav"
-dest_files=[ "res://.import/car-engine-loop-deep.wav-65895700ab98b620381002f1f8703cb1.sample" ]
+source_file="res://Assets/audio/car-engine-loop-deep.wav"
+dest_files=[ "res://.import/car-engine-loop-deep.wav-a6c33d8b4c6e6161baee4ba4b257ab15.sample" ]
 
 [params]
 

@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/carsquish3.wav-e2cd20352bec1ad237c10638a3cda1ce.sample"
+path="res://.import/carsquish3.wav-b7876a89fb9a87c0d9c9031f62b7a52b.sample"
 
 [deps]
 
-source_file="res://assets/audio/carsquish3.wav"
-dest_files=[ "res://.import/carsquish3.wav-e2cd20352bec1ad237c10638a3cda1ce.sample" ]
+source_file="res://Assets/audio/carsquish3.wav"
+dest_files=[ "res://.import/carsquish3.wav-b7876a89fb9a87c0d9c9031f62b7a52b.sample" ]
 
 [params]
 

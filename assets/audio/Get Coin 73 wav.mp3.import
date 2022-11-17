@@ -2,12 +2,12 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/Get Coin 73 wav.mp3-85020d8d506a31b6dd0336bb2eff60a0.mp3str"
+path="res://.import/Get Coin 73 wav.mp3-f0f1e9aa30d947596cb23790201b4a40.mp3str"
 
 [deps]
 
-source_file="res://assets/audio/Get Coin 73 wav.mp3"
-dest_files=[ "res://.import/Get Coin 73 wav.mp3-85020d8d506a31b6dd0336bb2eff60a0.mp3str" ]
+source_file="res://Assets/audio/Get Coin 73 wav.mp3"
+dest_files=[ "res://.import/Get Coin 73 wav.mp3-f0f1e9aa30d947596cb23790201b4a40.mp3str" ]
 
 [params]
 

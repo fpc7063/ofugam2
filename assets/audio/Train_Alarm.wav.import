@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/Train_Alarm.wav-d96fc5079ef91fbbcdc3f642e6733002.sample"
+path="res://.import/Train_Alarm.wav-37b5be40de0185bc433bb2243b27d7bc.sample"
 
 [deps]
 
-source_file="res://assets/audio/Train_Alarm.wav"
-dest_files=[ "res://.import/Train_Alarm.wav-d96fc5079ef91fbbcdc3f642e6733002.sample" ]
+source_file="res://Assets/audio/Train_Alarm.wav"
+dest_files=[ "res://.import/Train_Alarm.wav-37b5be40de0185bc433bb2243b27d7bc.sample" ]
 
 [params]
 

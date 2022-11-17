@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/car-horn.wav-1b0b8b76a38591f8a13ada24d0276709.sample"
+path="res://.import/car-horn.wav-1c8bb8d8ed62dea7da3922e1d7445626.sample"
 
 [deps]
 
-source_file="res://assets/audio/car-horn.wav"
-dest_files=[ "res://.import/car-horn.wav-1b0b8b76a38591f8a13ada24d0276709.sample" ]
+source_file="res://Assets/audio/car-horn.wav"
+dest_files=[ "res://.import/car-horn.wav-1c8bb8d8ed62dea7da3922e1d7445626.sample" ]
 
 [params]
 

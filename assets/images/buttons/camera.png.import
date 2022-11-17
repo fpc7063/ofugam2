@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/camera.png-99c78eb3d0158a93a65a0cf439c8813f.stex"
+path="res://.import/camera.png-8997ac8cc16d3ee685a722133534a296.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/buttons/camera.png"
-dest_files=[ "res://.import/camera.png-99c78eb3d0158a93a65a0cf439c8813f.stex" ]
+source_file="res://Assets/images/buttons/camera.png"
+dest_files=[ "res://.import/camera.png-8997ac8cc16d3ee685a722133534a296.stex" ]
 
 [params]
 

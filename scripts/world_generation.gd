@@ -58,11 +58,10 @@ func add_line() -> void:
 	var i = check_next(previous)
 	new_line+=1
 	for x in range(-2, 2):
-		print(x)
 		$GridMap.set_cell_item(x, 0, new_line, i)
 	
-	if(i in [ROAD, ROADLINE]):
-		add_spawner(new_line)
+	if(i in [ROAD, ROADLINE, SIDEWALK]):
+		add_spawner(new_line, i)
 		add_blocker(new_line)
 	
 	if(i == DESERT_SAND):
@@ -101,8 +100,8 @@ func redraw_board() -> void:
 			var previous = $GridMap.get_cell_item(0, 0, z - 1)
 			i = check_next(previous)
 		
-		if(i in [ROAD, ROADLINE]):
-			add_spawner(z)
+		if(i in [ROAD, ROADLINE, SIDEWALK]):
+			add_spawner(z, i)
 			add_blocker(z)
 		
 		if((z > 4) and (i == DESERT_SAND)):
@@ -112,7 +111,7 @@ func redraw_board() -> void:
 			$GridMap.set_cell_item(x, 0, z, i)
 
 
-func add_spawner(line: int) -> void:
+func add_spawner(line: int, type: int) -> void:
 	var side = random_utils.rand_array_element([1, -1])
 	var time = rand_range(2.0, 5.0)
 	var speed = rand_range(10.0, 15.0) * (- side)
@@ -121,13 +120,13 @@ func add_spawner(line: int) -> void:
 	add_child(spawner)
 	spawner_list.append([line, spawner])
 	spawner.translation = Vector3(40 * side, 2.8, (line * 2) + 1)
-	spawner.start(speed)
+	spawner.start(speed, type)
 
 
 func remove_spawner() -> void:
 	var spawner = spawner_list[0]
-	spawner_list.pop_front()
 	spawner[1].queue_free()
+	spawner_list.pop_front()
 	#Only removes child from tree, does not delete it https://godotengine.org/qa/49429/what-is-difference-queue_free-and-remove_child-what-queue
 	#remove_child(spawner[1])
 
@@ -150,11 +149,13 @@ func check_next(previous: int) -> int:
 	# TODO: add more change to staying in the same type of biome
 	match previous:
 		DESERT_SAND:
-			i = random_utils.rand_array_element([DESERT_SAND, ROAD, ROADLINE, ])
+			i = random_utils.rand_array_element([DESERT_SAND, ROAD, ROADLINE, SIDEWALK])
 		ROAD:
 			i = DESERT_SAND
 		ROADLINE:
-			i = random_utils.rand_array_element([ROAD, ROADLINE])
+			i = random_utils.rand_array_element([ROAD, ROADLINE, SIDEWALK])
+		SIDEWALK:
+			i = random_utils.rand_array_element([DESERT_SAND])
 		NOTHING:
 			i = DESERT_SAND
 	

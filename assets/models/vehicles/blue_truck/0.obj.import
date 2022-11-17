@@ -2,14 +2,14 @@
 
 importer="wavefront_obj"
 type="Mesh"
-path="res://.import/0.obj-edf4472556480ee267f3f51e7dcdc1c3.mesh"
+path="res://.import/0.obj-e08828c47e7f8611db6301659bb8085a.mesh"
 
 [deps]
 
-files=[ "res://.import/0.obj-edf4472556480ee267f3f51e7dcdc1c3.mesh" ]
+files=[ "res://.import/0.obj-e08828c47e7f8611db6301659bb8085a.mesh" ]
 
-source_file="res://assets/models/vehicles/blue_truck/0.obj"
-dest_files=[ "res://.import/0.obj-edf4472556480ee267f3f51e7dcdc1c3.mesh", "res://.import/0.obj-edf4472556480ee267f3f51e7dcdc1c3.mesh" ]
+source_file="res://Assets/models/vehicles/blue_truck/0.obj"
+dest_files=[ "res://.import/0.obj-e08828c47e7f8611db6301659bb8085a.mesh", "res://.import/0.obj-e08828c47e7f8611db6301659bb8085a.mesh" ]
 
 [params]
 

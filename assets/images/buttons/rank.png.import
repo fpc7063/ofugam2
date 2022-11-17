@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/rank.png-de6e659b0bb8d1852bfd3ca1eb32b276.stex"
+path="res://.import/rank.png-1ce0414b70353e3d381cc570870c908e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/buttons/rank.png"
-dest_files=[ "res://.import/rank.png-de6e659b0bb8d1852bfd3ca1eb32b276.stex" ]
+source_file="res://Assets/images/buttons/rank.png"
+dest_files=[ "res://.import/rank.png-1ce0414b70353e3d381cc570870c908e.stex" ]
 
 [params]
 

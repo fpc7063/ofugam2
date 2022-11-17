@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/long_play.png-664e5753ecbd10a04ed12457f5e0f8ea.stex"
+path="res://.import/long_play.png-38ff8e10f6031fcd351ec31d7983cb61.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/buttons/long_play.png"
-dest_files=[ "res://.import/long_play.png-664e5753ecbd10a04ed12457f5e0f8ea.stex" ]
+source_file="res://Assets/images/buttons/long_play.png"
+dest_files=[ "res://.import/long_play.png-38ff8e10f6031fcd351ec31d7983cb61.stex" ]
 
 [params]
 

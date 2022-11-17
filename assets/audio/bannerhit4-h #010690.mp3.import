@@ -2,12 +2,12 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/bannerhit4-h #010690.mp3-6fac2d17e32a1acc95a43b3c61168687.mp3str"
+path="res://.import/bannerhit4-h #010690.mp3-3644ee878732c063cb5ebd64813ec65e.mp3str"
 
 [deps]
 
-source_file="res://assets/audio/bannerhit4-h #010690.mp3"
-dest_files=[ "res://.import/bannerhit4-h #010690.mp3-6fac2d17e32a1acc95a43b3c61168687.mp3str" ]
+source_file="res://Assets/audio/bannerhit4-h #010690.mp3"
+dest_files=[ "res://.import/bannerhit4-h #010690.mp3-3644ee878732c063cb5ebd64813ec65e.mp3str" ]
 
 [params]
 

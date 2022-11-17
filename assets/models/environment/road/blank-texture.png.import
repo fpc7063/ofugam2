@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/blank-texture.png-52fe8cb7a2272c82a60829d7d2ceec6d.stex"
+path="res://.import/blank-texture.png-71ec5ac9d11f7638d2a8431e159c1d62.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/models/environment/road/blank-texture.png"
-dest_files=[ "res://.import/blank-texture.png-52fe8cb7a2272c82a60829d7d2ceec6d.stex" ]
+source_file="res://Assets/models/environment/road/blank-texture.png"
+dest_files=[ "res://.import/blank-texture.png-71ec5ac9d11f7638d2a8431e159c1d62.stex" ]
 
 [params]
 

@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/buck8.wav-c72923d27712179b44f68cff233d3767.sample"
+path="res://.import/buck8.wav-e9d5d0088dbd3972461f36c8ea85aa75.sample"
 
 [deps]
 
-source_file="res://assets/audio/buck8.wav"
-dest_files=[ "res://.import/buck8.wav-c72923d27712179b44f68cff233d3767.sample" ]
+source_file="res://Assets/audio/buck8.wav"
+dest_files=[ "res://.import/buck8.wav-e9d5d0088dbd3972461f36c8ea85aa75.sample" ]
 
 [params]
 

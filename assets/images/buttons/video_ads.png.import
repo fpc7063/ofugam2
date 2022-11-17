@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/video_ads.png-560dbaee113a4f952aa8bb0224ac61ba.stex"
+path="res://.import/video_ads.png-20302b194274446a56d1b9d9376ce58e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/buttons/video_ads.png"
-dest_files=[ "res://.import/video_ads.png-560dbaee113a4f952aa8bb0224ac61ba.stex" ]
+source_file="res://Assets/images/buttons/video_ads.png"
+dest_files=[ "res://.import/video_ads.png-20302b194274446a56d1b9d9376ce58e.stex" ]
 
 [params]
 

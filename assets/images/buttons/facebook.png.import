@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/facebook.png-19118507fad23c6717818ea072969b68.stex"
+path="res://.import/facebook.png-4e3b6440ce47f027bbe5d9c8950db7b4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/buttons/facebook.png"
-dest_files=[ "res://.import/facebook.png-19118507fad23c6717818ea072969b68.stex" ]
+source_file="res://Assets/images/buttons/facebook.png"
+dest_files=[ "res://.import/facebook.png-4e3b6440ce47f027bbe5d9c8950db7b4.stex" ]
 
 [params]
 

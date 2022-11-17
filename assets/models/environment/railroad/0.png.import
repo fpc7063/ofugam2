@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/0.png-a3016ffed7a7d26652a3274ba9f9f0f0.stex"
+path="res://.import/0.png-8b6aa7e8411430427bfd589d41d90e8a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/models/environment/railroad/0.png"
-dest_files=[ "res://.import/0.png-a3016ffed7a7d26652a3274ba9f9f0f0.stex" ]
+source_file="res://Assets/models/environment/railroad/0.png"
+dest_files=[ "res://.import/0.png-8b6aa7e8411430427bfd589d41d90e8a.stex" ]
 
 [params]
 

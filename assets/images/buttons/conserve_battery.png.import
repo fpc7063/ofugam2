@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/conserve_battery.png-716f857562d4a40a353cbabbed41a4c9.stex"
+path="res://.import/conserve_battery.png-00e64b017f9103c910998646246d5913.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/buttons/conserve_battery.png"
-dest_files=[ "res://.import/conserve_battery.png-716f857562d4a40a353cbabbed41a4c9.stex" ]
+source_file="res://Assets/images/buttons/conserve_battery.png"
+dest_files=[ "res://.import/conserve_battery.png-00e64b017f9103c910998646246d5913.stex" ]
 
 [params]
 

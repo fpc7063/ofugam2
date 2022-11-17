@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mail.png-cb301ccad3d6726b7fb3191c0d1f9443.stex"
+path="res://.import/mail.png-0a333132a5aaf3bf7705d16322552211.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/buttons/mail.png"
-dest_files=[ "res://.import/mail.png-cb301ccad3d6726b7fb3191c0d1f9443.stex" ]
+source_file="res://Assets/images/buttons/mail.png"
+dest_files=[ "res://.import/mail.png-0a333132a5aaf3bf7705d16322552211.stex" ]
 
 [params]
 

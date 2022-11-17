@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/0.png-cf6e5798970481a5ff5d5e63979068d6.stex"
+path="res://.import/0.png-83c9efa1bdfe131da368396a2ca2aefd.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/models/vehicles/taxi/0.png"
-dest_files=[ "res://.import/0.png-cf6e5798970481a5ff5d5e63979068d6.stex" ]
+source_file="res://Assets/models/vehicles/taxi/0.png"
+dest_files=[ "res://.import/0.png-83c9efa1bdfe131da368396a2ca2aefd.stex" ]
 
 [params]
 

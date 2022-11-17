@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/0.png-0237d6fa3372e129078b64f599805578.stex"
+path="res://.import/0.png-9470e6ef07393d5288193773f8a0b13f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/models/vehicles/train/front/0.png"
-dest_files=[ "res://.import/0.png-0237d6fa3372e129078b64f599805578.stex" ]
+source_file="res://Assets/models/vehicles/train/front/0.png"
+dest_files=[ "res://.import/0.png-9470e6ef07393d5288193773f8a0b13f.stex" ]
 
 [params]
 
