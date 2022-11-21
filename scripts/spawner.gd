@@ -1,5 +1,8 @@
 extends Spatial
 
+#data_utils_file
+const duf := preload("res://scripts/utils/data.gd")
+var du := duf.new()
 
 onready var _spawned_entity = preload("res://Prefabs/Spawned/Spawned.tscn")
 var entity_list = [
@@ -18,9 +21,9 @@ export var time_between_spawns: float = 3
 func start(_speed: float, type: int) -> void:
 	speed = _speed
 	$Timer.wait_time = time_between_spawns
-	if(type == 1 or type == 2):
+	if(type == du.ROAD or type == du.ROADLINE):
 		start_spawning(entity_list[0])
-	elif(type == 3):
+	elif(type == du.SIDEWALK):
 		start_spawning(entity_list[1])
 
 
