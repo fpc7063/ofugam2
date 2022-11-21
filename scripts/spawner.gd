@@ -9,6 +9,7 @@ var entity_list = [
 	"res://vox/vehicles/taxi/",
 	"res://vox/people/"
 ]
+
 # TODO: optimatize vehicle_list to not grow indefinetly
 var vehicle_list: Array = []
 export var spawn_chance: int = 10
@@ -17,7 +18,6 @@ export var speed_min: float = 0.0
 var speed: float
 export var time_between_spawns: float = 3
 
-# TODO: Add function to clear out of bounds cars. When player despawn spawner it is already despawned
 func start(_speed: float, type: int) -> void:
 	speed = _speed
 	$Timer.wait_time = time_between_spawns
@@ -38,11 +38,3 @@ func start_spawning(path: String):
 			spawned.start(speed, path)
 		$Timer.start()
 		yield($Timer, "timeout")
-
-
-#not working
-#func _notification(notification):
-#	if notification == NOTIFICATION_PREDELETE:
-#		for vehicle in vehicle_list:
-#			vehicle.queue_free()
-
