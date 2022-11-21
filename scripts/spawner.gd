@@ -18,9 +18,9 @@ export var time_between_spawns: float = 3
 func start(_speed: float, type: int) -> void:
 	speed = _speed
 	$Timer.wait_time = time_between_spawns
-	if(type == 1):
+	if(type == 1 or type == 2):
 		start_spawning(entity_list[0])
-	elif(type == 2):
+	elif(type == 3):
 		start_spawning(entity_list[1])
 
 
@@ -28,11 +28,11 @@ func start_spawning(path: String):
 	while true:
 		var should_spawn = rand_range(0, 100)
 		if(should_spawn < spawn_chance):
-			var vehicle = _spawned_entity.instance()
-			add_child(vehicle)
-			vehicle_list.append(vehicle)
-			vehicle.global_transform.origin = self.global_transform.origin
-			vehicle.start(speed, path)
+			var spawned = _spawned_entity.instance()
+			add_child(spawned)
+			vehicle_list.append(spawned)
+			spawned.global_transform.origin = self.global_transform.origin
+			spawned.start(speed, path)
 		$Timer.start()
 		yield($Timer, "timeout")
 
