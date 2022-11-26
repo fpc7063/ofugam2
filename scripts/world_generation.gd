@@ -89,13 +89,12 @@ func redraw_board() -> void:
 func add_spawner(line: int, type: int) -> void:
 	var side = random_utils.rand_array_element([1, -1])
 	var time = rand_range(2.0, 5.0)
-	var speed = rand_range(10.0, 15.0) * (- side)
 	
 	var spawner = _spawner.instance()
 	add_child(spawner)
 	spawner_list.append([line, spawner])
 	spawner.translation = Vector3(40 * side, 2.8, (line * 2) + 1)
-	spawner.start(speed, type)
+	spawner.start(type, - side)
 
 
 func remove_spawner() -> void:
