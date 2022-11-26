@@ -11,6 +11,6 @@ dest_files=[ "res://.import/burca.vox-7c2e8dd68321e7a82ec7215eafaafa14.mesh" ]
 
 [params]
 
-Scale=0.1
+Scale=0.07
 GreedyMeshGenerator=true
 SnapToGround=false
