@@ -1,0 +1,16 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/qatar_male2.vox-0e0d9d326e10d5766cc1e6e668114cbf.mesh"
+
+[deps]
+
+source_file="res://vox/people/qatar_male2.vox"
+dest_files=[ "res://.import/qatar_male2.vox-0e0d9d326e10d5766cc1e6e668114cbf.mesh" ]
+
+[params]
+
+Scale=0.1
+GreedyMeshGenerator=true
+SnapToGround=false
