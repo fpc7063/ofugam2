@@ -10,6 +10,10 @@ var old_line: int = 0
 var cam_stop: bool = false
 
 
+# line handler
+onready var lh = get_node("/root/LineHandler")
+
+
 func _ready() -> void:
 	new_line = translation.x
 	old_line = translation.z
@@ -22,7 +26,6 @@ func _physics_process(delta) -> void:
 	var player_z = get_parent().z_player
 	var diff = player_z - int(self.translation.z)
 	
-	# TODO add minimum camera velocity
 	if(diff < -10):
 		_speed = 25
 	elif(diff < -5):
@@ -43,5 +46,5 @@ func _physics_process(delta) -> void:
 	if(new_line == old_line + 2):
 		old_line = new_line
 		var parent = get_parent()
-		parent.add_line()
-		parent.del_line()
+		lh.add_line()
+		lh.del_line()

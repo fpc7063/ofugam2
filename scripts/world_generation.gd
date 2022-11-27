@@ -8,8 +8,8 @@ var random_utils := ruf.new()
 const duf := preload("res://scripts/utils/data.gd")
 var du := duf.new()
 
-var new_line: int = 20
-var old_line: int = -5
+export var new_line: int = 40
+export var old_line: int = -5
 var z_player: int = 0
 var z_cam: int = 0
 export var max_x: int = 10
@@ -60,6 +60,7 @@ func del_line() -> void:
 func redraw_board() -> void:
 	var meshlib: MeshLibrary = $GridMap.mesh_library
 	var sand: int = meshlib.find_item_by_name("sand-0")
+	#TODO: remove spawners
 	$GridMap.clear()
 	$obstacles.clear()
 	#TODO: reset not working
@@ -120,7 +121,7 @@ func add_obstacles(line: int) -> void:
 
 func check_next(previous: int) -> int:
 	var i: int
-	# TODO: add more change to staying in the same type of biome
+	# TODO: add more change to attempting to stay in the same type of line
 	match previous:
 		du.DESERT_SAND:
 			i = random_utils.rand_array_element([du.DESERT_SAND, du.ROAD, du.ROADLINE, du.SIDEWALK])

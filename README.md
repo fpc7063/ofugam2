@@ -1,5 +1,5 @@
 # Class final assignment for class *Design de Jogos*
-Teacher: Fabrício Ofugi
+Teacher: Fabrício Ofugi \
 Students:
 * Francisco Pena Cunha
 * Marcos Adriano Leitão Cotta

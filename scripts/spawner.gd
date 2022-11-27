@@ -4,7 +4,7 @@ extends Spatial
 const duf := preload("res://scripts/utils/data.gd")
 var du := duf.new()
 
-onready var _spawned_entity = preload("res://Prefabs/Spawned/Spawned.tscn")
+const _spawned_entity = preload("res://Prefabs/Spawned/Spawned.tscn")
 var entity_list = [
 	"res://vox/vehicles/taxi/",
 	"res://vox/people/"
