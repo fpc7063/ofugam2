@@ -30,8 +30,10 @@ enum {
 
 # world limits
 export var new_world_line: int = 40
-var nwl: int = new_world_line
-export var old_world_line: int = -5
-var owl: int = old_world_line
+export var nwl: int = new_world_line
+export var old_world_line: int = 0
+export var owl: int = old_world_line
 export var max_x: int = 10
 export var min_x: int = -6
+export var player_initial_pos: Vector3 = Vector3(7, 3, 13)
+

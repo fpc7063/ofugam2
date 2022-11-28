@@ -47,10 +47,23 @@ func delete_world() -> void:
 	obstacles_gridMap.clear()
 	#TODO: remove spawners
 
-# Load a premade small map from 5-10
 func create_world() -> void:
 	# Ranges through initial world borders creating it
-	for z in range(du.old_world_line, du.new_world_line + 1):
+	for z in range(du.old_world_line, du.old_world_line + 10):
+		# Force start to be only sand
+		var i: int = du.DESERT_SAND
+		for x in range(-2, 2):
+			floor_gridMap.set_cell_item(x, 0, z, i)
+		# Block sides
+		obstacles_gridMap.set_cell_item(du.max_x, 0, z, rand_range(7,8))
+		obstacles_gridMap.set_cell_item(du.min_x, 0, z, rand_range(7,8))
+	
+	# Block back
+	for x in range(du.min_x, du.max_x):
+		obstacles_gridMap.set_cell_item(x, 0, 2, rand_range(7,8))
+	
+	# Adds the rest of the world
+	for z in range(du.old_world_line + 10, du.new_world_line + 1):
 		var i: int
 		if(z <= 5):
 			i = du.DESERT_SAND
