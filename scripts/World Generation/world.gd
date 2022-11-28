@@ -73,5 +73,8 @@ func player_height(pos_z) -> float:
 	var p: Vector3 = Vector3(0, 0, pos_z)
 	var m: Vector3 = floor_gridMap.world_to_map(p)
 	var i: int = floor_gridMap.get_cell_item(m.x, m.y, m.z)
-	return 3.0 if i == du.DESERT_SAND else 2.8
+	if i == du.DESERT_SAND or i == du.SIDEWALK:
+		return 3.0
+	else:
+		return 2.8
 	

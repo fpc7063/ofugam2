@@ -11,6 +11,6 @@ dest_files=[ "res://.import/qatar_male2.vox-0e0d9d326e10d5766cc1e6e668114cbf.mes
 
 [params]
 
-Scale=0.1
+Scale=0.07
 GreedyMeshGenerator=true
 SnapToGround=false

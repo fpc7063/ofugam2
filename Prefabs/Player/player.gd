@@ -54,11 +54,11 @@ func _physics_process(delta: float) -> void:
 		var playerMoveWithY = Vector3(playerMove.x, get_parent().player_height(playerMove.z), playerMove.z)
 		var t = 0.1
 		# Order of things are not important in Tween, but there is a function paramenter that tells when to start action
-		$tw.interpolate_property(self, "translation", playerTranslation, playerMoveWithY, t, Tween.TRANS_BOUNCE, Tween.EASE_OUT)
-		$tw.interpolate_property($MeshInstance, "translation:y", 0.4, 0.0, t/2, Tween.TRANS_LINEAR, Tween.EASE_IN, 0.05)
-		$tw.interpolate_property($MeshInstance, "translation:y", 0.0, 0.4, t/2, Tween.TRANS_LINEAR, Tween.EASE_IN)
-		$tw.start()
-		yield($tw, "tween_all_completed")
+		$tw_jump.interpolate_property(self, "translation", playerTranslation, playerMoveWithY, t, Tween.TRANS_BOUNCE, Tween.EASE_OUT)
+		$tw_jump.interpolate_property($MeshInstance, "translation:y", 0.4, 0.0, t/2, Tween.TRANS_LINEAR, Tween.EASE_IN, 0.05)
+		$tw_jump.interpolate_property($MeshInstance, "translation:y", 0.0, 0.4, t/2, Tween.TRANS_LINEAR, Tween.EASE_IN)
+		$tw_jump.start()
+		yield($tw_jump, "tween_all_completed")
 		is_moving = false
 	
 	
