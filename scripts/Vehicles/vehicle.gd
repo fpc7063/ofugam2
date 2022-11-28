@@ -28,6 +28,8 @@ func start(speed: float, path: String) -> void:
 	c.extents = $MeshInstance.get_aabb().size / 2
 	$CollisionShape.shape = c
 
+func get_mesh_size():
+	return $MeshInstance.get_aabb().size / 2
 
 func _physics_process(delta: float) -> void:
 	velocity = move_and_slide(velocity, Vector3.UP)

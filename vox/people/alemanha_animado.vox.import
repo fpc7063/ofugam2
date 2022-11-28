@@ -1,0 +1,16 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/alemanha_animado.vox-8911350f025a716062a16b0ff13556c5.mesh"
+
+[deps]
+
+source_file="res://vox/people/alemanha_animado.vox"
+dest_files=[ "res://.import/alemanha_animado.vox-8911350f025a716062a16b0ff13556c5.mesh" ]
+
+[params]
+
+Scale=0.1
+GreedyMeshGenerator=true
+SnapToGround=false

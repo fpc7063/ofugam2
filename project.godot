@@ -18,6 +18,10 @@ config/name="Pesadelo do Atacante"
 run/main_scene="res://scenes/game.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+LineHandler="*res://scripts/World Generation/line_handler.gd"
+
 [editor_plugins]
 
 enabled=PoolStringArray( "res://addons/MagicaVoxel_Importer_with_Extensions/plugin.cfg" )
