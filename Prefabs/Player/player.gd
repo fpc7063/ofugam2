@@ -9,6 +9,10 @@ var direction: Vector3 = Vector3.ZERO
 onready var states = get_node("/root/StateStore")
 
 
+func _ready():
+	states.set_player_obj(self)
+
+
 func _physics_process(delta: float) -> void:
 	var r0: float = $MeshInstance.rotation_degrees.y
 	var r1: float = $MeshInstance.rotation_degrees.y
@@ -74,7 +78,12 @@ func _physics_process(delta: float) -> void:
 		$tw_breathing.start()
 		yield($tw_breathing, "tween_all_completed")
 		is_breathing = false
-		
+
+
+func reset_player():
+	is_moving = false
+	is_rotating = false
+	is_breathing = false
 
 
 func _on_player_body_entered(body: Node) -> void:

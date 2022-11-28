@@ -36,4 +36,5 @@ export var owl: int = old_world_line
 export var max_x: int = 10
 export var min_x: int = -6
 export var player_initial_pos: Vector3 = Vector3(7, 3, 13)
+export var camera_initial_pos: Vector3 = Vector3(0, 4, 13)
 

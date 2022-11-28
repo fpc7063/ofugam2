@@ -33,14 +33,20 @@ func _ready() -> void:
 	obstacles_gridMap.clear()
 
 	# Drawboard
+	states.set_world_script(self)
 	lh.start(floor_gridMap, obstacles_gridMap)
 	create_world()
 
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_accept"):
-		delete_world()
-		create_world()
+		reset_game()
+
+func reset_game():
+	delete_world()
+	create_world()
+	$player.translation = du.player_initial_pos
+	$cam.translation = du.camera_initial_pos
 
 func delete_world() -> void:
 	lh.purge_spawners()

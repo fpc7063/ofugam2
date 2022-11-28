@@ -13,7 +13,7 @@ margin_top = 401.0
 margin_right = 278.0
 margin_bottom = 525.0
 
-[node name="Button" type="Button" parent="VBoxContainer"]
+[node name="RestartButton" type="Button" parent="VBoxContainer"]
 margin_right = 180.0
 margin_bottom = 20.0
 text = "Restart"
@@ -22,15 +22,14 @@ text = "Restart"
 margin_top = 24.0
 margin_right = 180.0
 margin_bottom = 44.0
-focus_neighbour_top = NodePath("../QuitButton")
 text = "Options"
 
 [node name="QuitButton" type="Button" parent="VBoxContainer"]
 margin_top = 48.0
 margin_right = 180.0
 margin_bottom = 68.0
-focus_neighbour_bottom = NodePath("../OptionsButton")
 text = "Quit"
 
+[connection signal="pressed" from="VBoxContainer/RestartButton" to="." method="_on_RestartButton_pressed"]
 [connection signal="pressed" from="VBoxContainer/OptionsButton" to="." method="_on_OptionsButton_pressed"]
 [connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_QuitButton_pressed"]
