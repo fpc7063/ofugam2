@@ -1,0 +1,49 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Assets/Menu/bg_fill.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Menu/bg.png" type="Texture" id=2]
+[ext_resource path="res://Assets/fonts/retro.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Prefabs/Menu/Menu.gd" type="Script" id=4]
+
+[node name="Interface" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 4 )
+
+[node name="WalkCount" type="NinePatchRect" parent="."]
+margin_left = 624.0
+margin_right = 1024.0
+margin_bottom = 100.0
+
+[node name="WalkCountLabel" type="Label" parent="WalkCount"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -150.0
+margin_top = -25.0
+margin_right = 150.0
+margin_bottom = 25.0
+custom_fonts/font = ExtResource( 3 )
+text = "65"
+align = 2
+valign = 1
+
+[node name="SpecialProgress" type="NinePatchRect" parent="."]
+margin_left = 624.0
+margin_top = 500.0
+margin_right = 1024.0
+margin_bottom = 600.0
+
+[node name="SpecialTextureProgress" type="TextureProgress" parent="SpecialProgress"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -124.0
+margin_top = -20.0
+margin_right = 124.0
+margin_bottom = 20.0
+value = 50.0
+texture_under = ExtResource( 2 )
+texture_progress = ExtResource( 1 )

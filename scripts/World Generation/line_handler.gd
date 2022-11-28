@@ -31,6 +31,7 @@ func start(f_gridMap: GridMap, o_gridMap: GridMap):
 	old_world_line = du.owl
 
 
+# TODO: ensure that there is a path from new_world_line -1 to new_world_line
 func add_line() -> void:
 	var previous = floor_gridMap.get_cell_item(0, 0, new_world_line)
 	var i = check_next(previous)
