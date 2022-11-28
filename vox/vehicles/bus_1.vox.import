@@ -11,6 +11,6 @@ dest_files=[ "res://.import/bus_1.vox-8f7dd83bf9e87575033f58ca0a0a9550.mesh" ]
 
 [params]
 
-Scale=0.05
+Scale=0.045
 GreedyMeshGenerator=true
 SnapToGround=false
