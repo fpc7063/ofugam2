@@ -20,6 +20,7 @@ var obstacles_gridMap: GridMap
 
 # line handler
 onready var lh = get_node("/root/LineHandler")
+onready var states = get_node("/root/StateStore")
 
 
 func _ready() -> void:

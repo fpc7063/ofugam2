@@ -12,6 +12,7 @@ var cam_stop: bool = false
 
 # line handler
 onready var lh = get_node("/root/LineHandler")
+onready var states = get_node("/root/StateStore")
 
 
 func _ready() -> void:
@@ -20,8 +21,11 @@ func _ready() -> void:
 
 
 func _physics_process(delta) -> void:
-	if(cam_stop):
+	if(not states.gameIsStarted or not states.playerIsAlive):
+		get_parent().get_node("MainMenu").visible = true
 		return
+	else:
+		get_parent().get_node("MainMenu").visible = false
 		
 	var player_z = get_parent().z_player
 	var diff = player_z - int(self.translation.z)

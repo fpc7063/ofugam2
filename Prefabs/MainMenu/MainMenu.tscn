@@ -13,25 +13,18 @@ margin_top = 401.0
 margin_right = 278.0
 margin_bottom = 525.0
 
-[node name="StartButton" type="Button" parent="VBoxContainer"]
+[node name="OptionsButton" type="Button" parent="VBoxContainer"]
 margin_right = 180.0
 margin_bottom = 20.0
 focus_neighbour_top = NodePath("../QuitButton")
-text = "Start game"
-
-[node name="OptionsButton" type="Button" parent="VBoxContainer"]
-margin_top = 24.0
-margin_right = 180.0
-margin_bottom = 44.0
 text = "Options"
 
 [node name="QuitButton" type="Button" parent="VBoxContainer"]
-margin_top = 48.0
+margin_top = 24.0
 margin_right = 180.0
-margin_bottom = 68.0
-focus_neighbour_bottom = NodePath("../StartButton")
+margin_bottom = 44.0
+focus_neighbour_bottom = NodePath("../OptionsButton")
 text = "Quit"
 
-[connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_StartButton_pressed"]
 [connection signal="pressed" from="VBoxContainer/OptionsButton" to="." method="_on_OptionsButton_pressed"]
 [connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_QuitButton_pressed"]

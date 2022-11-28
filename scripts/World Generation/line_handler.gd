@@ -77,8 +77,8 @@ func add_spawner(line: int, type: int) -> void:
 	new_spawner.start(type, - side)
 
 func remove_spawner(spawner) -> void:
-	spawner[1].queue_free()
-	spawner_list.pop_front()
+	var tmp_spawn = spawner_list.pop_front()
+	tmp_spawn[1].queue_free()
 	#Only removes child from tree, does not delete it https://godotengine.org/qa/49429/what-is-difference-queue_free-and-remove_child-what-queue
 	#remove_child(spawner[1])
 	#check if spawneds are removed

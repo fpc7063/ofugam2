@@ -3,8 +3,10 @@ extends Area
 var is_moving: bool = false
 var is_rotating: bool = false
 var is_breathing: bool = false
-var is_dead: bool = false
 var direction: Vector3 = Vector3.ZERO
+
+
+onready var states = get_node("/root/StateStore")
 
 
 func _physics_process(delta: float) -> void:
@@ -12,7 +14,7 @@ func _physics_process(delta: float) -> void:
 	var r1: float = $MeshInstance.rotation_degrees.y
 	
 	
-	if(is_dead):
+	if(not states.playerIsAlive):
 		$Particles.emitting = true
 		var squash = Vector3(1.5, 0.2, 1.5)
 		$MeshInstance.set_scale(squash)
@@ -47,6 +49,7 @@ func _physics_process(delta: float) -> void:
 		is_rotating = false
 
 	if((direction != Vector3.ZERO) and (not is_moving)):
+		states.gameIsStarted = true
 		is_moving = true
 		var playerTranslation = self.translation
 		# Multiplied by 2 because of cell size in GridMap
@@ -54,7 +57,6 @@ func _physics_process(delta: float) -> void:
 		var playerMoveWithY = Vector3(playerMove.x, get_parent().player_height(playerMove.z), playerMove.z)
 		var t = 0.1
 		# Order of things are not important in Tween, but there is a function paramenter that tells when to start action
-		print(direction)
 		if(direction == Vector3.BACK): $Interface.walk()
 		$tw_jump.interpolate_property(self, "translation", playerTranslation, playerMoveWithY, t, Tween.TRANS_BOUNCE, Tween.EASE_OUT)
 		$tw_jump.interpolate_property($MeshInstance, "translation:y", 0.4, 0.0, t/2, Tween.TRANS_LINEAR, Tween.EASE_IN, 0.05)
@@ -77,4 +79,4 @@ func _physics_process(delta: float) -> void:
 
 
 func _on_player_body_entered(body: Node) -> void:
-	is_dead = true
+	states.playerIsAlive = false

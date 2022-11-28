@@ -3,8 +3,8 @@ extends Control
 
 var specialProgress: TextureProgress
 var walkCount: Label
-var _walkCount: int
-var _specialProgress: float
+var _walkCount: int = 0
+var _specialProgress: float = 0
 
 
 # Called when the node enters the scene tree for the first time.

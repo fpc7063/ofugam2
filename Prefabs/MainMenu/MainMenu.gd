@@ -1,12 +1,11 @@
 extends Control
 
 
+onready var states = get_node("/root/StateStore")
+
+
 func _ready():
-	$VBoxContainer/StartButton.grab_focus()
-
-
-func _on_StartButton_pressed():
-	get_tree().change_scene("res://scenes/game.tscn")
+	$VBoxContainer/OptionsButton.grab_focus()
 
 
 func _on_OptionsButton_pressed():
